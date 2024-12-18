@@ -9,4 +9,6 @@
 ## 知识库维护
 - Fork 到自己 github 下
 - 用 `ssh` 方式 `git clone `该项目
-- 在本地安装 [[uv]], 安装 [commitizen](https://commitizen-tools.github.io/commitizen/) 和 [第三方带表情的](https://commitizen-tools.github.io/commitizen/third-party-commitizen/#cz-conventional-gitmoji)
+- 安装 [[uv 安装 commitizen|commitizen]] 进行commit提交规范
+- [ ] git push
+[uv 安装 commitizen](uv/uv%20安装%20commitizen.md)
