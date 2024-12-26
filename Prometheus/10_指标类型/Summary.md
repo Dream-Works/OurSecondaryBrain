@@ -10,19 +10,19 @@ tags:
 Summary 类型的样本也会提供三种指标 (假设指标名称为)：
 - 样本值的分位数分布情况，命名为 `<basename>{quantile="<φ>"}`。
   ```promql
-  // 含义：这 12 次 http 请求中有 50% 的请求响应时间是 3.052404983s
+  # 含义：这 12 次 http 请求中有 50% 的请求响应时间是 3.052404983s
   io_namespace_http_requests_latency_seconds_summary{path="/",method="GET",code="200",quantile="0.5",} 3.052404983
-  // 含义：这 12 次 http 请求中有 90% 的请求响应时间是 8.003261666s
+  # 含义：这 12 次 http 请求中有 90% 的请求响应时间是 8.003261666s
   io_namespace_http_requests_latency_seconds_summary{path="/",method="GET",code="200",quantile="0.9",} 8.003261666
   ```
 - 所有样本值的大小总和，命名为 `<basename>_sum`。
   ```promql
-  // 含义：这12次 http 请求的总响应时间为 51.029495508s
+  # 含义：这12次 http 请求的总响应时间为 51.029495508s
   io_namespace_http_requests_latency_seconds_summary_sum{path="/",method="GET",code="200",} 51.029495508
   ```
 - 样本总数，命名为 `<basename>_count`。
-  ```
-  // 含义：当前一共发生了 12 次 http 请求
+  ```promql
+  # 含义：当前一共发生了 12 次 http 请求
   io_namespace_http_requests_latency_seconds_summary_count{path="/",method="GET",code="200",} 12.0
   ```
 
