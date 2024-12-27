@@ -24,10 +24,7 @@
 
 * git 方便管理和提交修改
 * Custom Attachment location，用于管理图片等附件链接，红框中的设置请保持一致。assets目录用于统一存放图片
-![](assets/README/file-20241227154258112.png)
-
-
-	
+![[file-20241227163431767.png]]
 
 
 
